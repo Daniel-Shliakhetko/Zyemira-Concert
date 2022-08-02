@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Monda:wght@400;700&family=Staatliches&display=swap');
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    background: #fff;
+    max-width: 100%;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    // font-size:1em;
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+
+    &:hover {
+        color: #000;
+    }
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+button {
+    background: none;
+    border: none;
+}
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.row {
+    margin: 0;
+}
+
+$white: #e0e0e0;
+$gray: #a7a7a7;
+$black: #000;
+$purple: #831adc;
+$pink: #9913e1;
+
+$font-heading: 'Staatliches', cursive;
+$font-bold: 'Monda', sans-serif, 700;
+$font-regular: 'Monda', sans-serif, 400;
+
+.purple {
+    background-color: $purple;
+}
+
+.black {
+    background-color: $black;
+}
+
+.moto-block {
+    color: $white;
+}
+
+[class*="col-"] {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
+//Large
+@media (min-width:1440px) {}
+
+//Default
+@media (max-width:1440px) and (min-width:1024px) {}
+
+//Tablet
+@media (max-width:1024px) and (min-width:768px) {}
+
+//Phone
+@media (max-width:768px) and (min-width:320px) {}
