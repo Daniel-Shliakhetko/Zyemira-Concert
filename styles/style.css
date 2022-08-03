@@ -4,8 +4,11 @@ html {
   margin: 0;
   padding: 0;
   font-size: 100%;
-  max-width: 100%;
   overflow-x: hidden;
+}
+
+body * {
+  overflow-y: hidden;
 }
 
 body {
@@ -84,6 +87,10 @@ button:focus {
 [class*=col-] {
   padding-left: 0 !important;
   padding-right: 0 !important;
+}
+
+[class*=carousel-] {
+  overflow-x: hidden;
 }
 
 .header {

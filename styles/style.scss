@@ -15,8 +15,13 @@ html {
     margin: 0;
     padding: 0;
     font-size: 100%;
-    max-width: 100%;
+    // max-width: 100%;
+    // max-height:100%;
     overflow-x: hidden;
+}
+
+body * {
+    overflow-y: hidden;
 }
 
 body {
@@ -101,11 +106,15 @@ button {
 
 .learn-more {}
 
-.title-highlight{}
+.title-highlight {}
 
 [class*="col-"] {
     padding-left: 0 !important;
     padding-right: 0 !important;
+}
+
+[class*="carousel-"] {
+    overflow-x: hidden;
 }
 
 .header {
@@ -120,6 +129,33 @@ button {
 
     &__link {}
 }
+
+.footer {
+
+    &__title {}
+
+    &__list {}
+
+    &__item {}
+
+    &__link {}
+
+}
+
+.footer-background {
+
+    &__dots {}
+
+    &__paper {}
+}
+
+.footer-logo {}
+
+.footer-fast-links {}
+
+.footer-performers {}
+
+.footer-learn-more {}
 
 //Large
 @media (min-width:1440px) {}

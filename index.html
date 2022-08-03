@@ -395,11 +395,213 @@
             </div>
           </div>
         </section>
-        <section class="party-heart"></section>
-        <section class="stars"></section>
-        <section class="news-letter"></section>
+        <section class="party-heart row">
+          <div class="party-heart__image col-md-6">
+            <img src="./img/party-heart/image.png" alt="Party Heart Image" />
+          </div>
+          <div class="party-heart-content col-md-6">
+            <div class="party-heart-content-background">
+              <img
+                class="party-heart-content-background__paper"
+                src="./img/party-heart/paper.png"
+                alt="Paper"
+              />
+              <img
+                class="party-heart-content-background__down-right"
+                src="./img/party-heart/down-right.png"
+                alt="Arrow 1"
+              />
+              <img
+                class="party-heart-content-background__down"
+                src="./img/party-heart/down.png"
+                alt="Arrow 2"
+              />
+              <img
+                class="party-heart-content-background__up-left"
+                src="./img/party-heart/up-left.png"
+                alt="Arrow 3"
+              />
+            </div>
+            <div class="party-heart-content__content">
+              <h2 class="party-heart-content__title">
+                <span class="title-highlight">party </span> your heart out!
+              </h2>
+              <p class="party-heart-content__description">
+                <b>Lorem ipsum dolor sit amet</b> consectetur adip isicing elit,
+                sed do ei usmod tempor incididunt ut labore et dolore magna
+                aliqua. Ut enim ad minim veniam quis nostrud exercitation.
+              </p>
+              <button class="learn-more">Learn More</button>
+            </div>
+          </div>
+        </section>
+        <section class="stars">
+          <div class="stars-backgorund">
+            <img
+              src="./img/stars/left-paper.png"
+              alt="Paper left"
+              class="stars-background__paper-left"
+            />
+            <img
+              src="./img/stars/dots.png"
+              alt="Dots"
+              class="stars-background__dots"
+            />
+            <img
+              src="./img/stars/right-paper.png"
+              alt="Paper right"
+              class="stars-background__paper-right"
+            />
+          </div>
+          <div class="carousel-stars">
+            <div class="carousel-stars__track" data-glide-el="track">
+              <ul class="carousel-stars__slides">
+                <li class="carousel-stars__slide">
+                  <div class="star">
+                    <div class="star-logo">
+                      <img
+                        class="star-logo__circle"
+                        src="./img/stars/circle.png"
+                        alt="Circle"
+                      />
+                      <img
+                        class="star-logo__star"
+                        src="./img/stars/star.png"
+                        alt="Star"
+                      />
+                    </div>
+                    <h3 class="star__title">
+                      <span class="title-highlight">John</span>Doe
+                    </h3>
+                    <p class="star__description">
+                      <b>Lorem ipsum dolor sit amet</b> consectetur adipisicing
+                      elit, sed do ei usmod tempor incididunt ut labore et
+                      dolore magna aliqua. Ut enim ad minim veniam.
+                    </p>
+                    <img
+                      src="./img/stars/stroke.png"
+                      alt="Stroke"
+                      class="star__stroke"
+                    />
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="carousel-stars__controls" data-glide-el="controls">
+              <button data-glide-dir="<">
+                <img src="./img/carousel/left.png" alt="Left" />
+              </button>
+              <button data-glide-dir=">">
+                <img src="./img/carousel/right.png" alt="Right" />
+              </button>
+            </div>
+          </div>
+        </section>
+        <section class="news-letter row">
+          <div class="news-letter-content col-md-6">
+            <img
+              src="./img/news-letter/paper.png"
+              alt="Paper"
+              class="news-letter-content__paper"
+            />
+            <form action="" class="news-letter-content__form">
+              <input
+                class="news-letter-content__name"
+                type="text"
+                name="name"
+                placeholder="enter your full name"
+              />
+              <input
+                class="news-letter-content__subject"
+                type="text"
+                name="subject"
+                placeholder="enter the subject"
+              />
+              <textarea
+                class="news-letter-content__message"
+                type="text"
+                name="message"
+                placeholder="enter your message"
+              ></textarea>
+              <input
+                class="news-letter-content__submit"
+                type="submit"
+                name="submit"
+                value="confirm"
+              />
+            </form>
+          </div>
+          <div class="news-letter-image col-md-6">
+            <img src="./img/news-letter/image.png" alt="News Letter Image" />
+          </div>
+        </section>
       </main>
-      <footer class="footer"></footer>
+      <footer class="footer row">
+        <div class="footer-background">
+          <img
+            class="footer-background__dots"
+            src="./img/footer/dots.png"
+            alt="Dots"
+          />
+          <img
+            class="footer-background__paper"
+            src="./img/footer/paper.png"
+            alt="Paper"
+          />
+        </div>
+        <div class="footer-logo col-md-3">
+          <img src="./img/footer/logo.png" alt="Logo" />
+        </div>
+        <div class="footer-fast-links col-md-3">
+          <h3 class="footer__title">Fast Links</h3>
+          <ul class="footer__list">
+            <li class="footer__item">
+              <a href="#" class="footer__link">Home</a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link">Event</a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link">Tickets</a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link">About</a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link">Schedule</a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link">Newsletter</a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link">Booking</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-performers col-md-3">
+          <h3 class="footer__title">Performers</h3>
+          <ul class="footer__list">
+            <li class="footer__item">
+              <a href="#" class="footer__link">Solo Singer</a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link">Duo Singers</a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link">Rapper</a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link">Rock</a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link">EDM</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-learn-more col-md-3">
+          <button class="learn-more">Learn More</button>
+        </div>
+      </footer>
     </div>
     <!-- <div class="carousel">
       <div class="carousel__track" data-glide-el="track">
@@ -425,6 +627,7 @@
     <script>
       new Glide(".carousel-dates").mount();
       new Glide(".carousel-info").mount();
+      new Glide(".carousel-stars").mount();
     </script>
   </body>
 </html>
