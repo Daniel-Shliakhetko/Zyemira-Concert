@@ -13,7 +13,12 @@
       integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
       crossorigin="anonymous"
     />
+    <link
+      rel="stylesheet"
+      href="node_modules/@glidejs/glide/dist/css/glide.core.min.css"
+    />
     <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/index.css" />
     <title>Document</title>
   </head>
   <body>
@@ -40,25 +45,41 @@
       <main class="content">
         <section class="home row">
           <div class="home-background">
-            <img class="home-background__paper" src="./img/home/paper.png" alt="Paper">
-            <img class="home-background__zig-zag" src="./img/home/zig-zag.png" alt="Zig-zag">
-            <img class="home-background__dots" src="./img/home/dots.png" alt="Dots">
+            <img
+              class="home-background__paper"
+              src="./img/home/paper.png"
+              alt="Paper"
+            />
+            <img
+              class="home-background__zig-zag"
+              src="./img/home/zig-zag.png"
+              alt="Zig-zag"
+            />
+            <img
+              class="home-background__dots"
+              src="./img/home/dots.png"
+              alt="Dots"
+            />
           </div>
           <div class="home-content col-md-9">
-            <div class="music-show-heading">
+            <div class="music-show-title">
               <img
-                class="music-show-heading__stroke"
+                class="music-show-title__stroke"
                 src="./img/home/stroke.png"
                 alt="Decorative stroke"
               />
               <img
-                class="music-show-heading__heading"
+                class="music-show-title__title"
                 src="./img/home/music-show.png"
                 alt="MUSIC SHOW"
               />
             </div>
-            <div class="moto-block black">a place to quench your thirst for music</div>
-            <div class="moto-block purple">party out with us for three days!</div>
+            <div class="moto">
+              <div class="moto__black">
+                a place to quench your thirst for music
+              </div>
+              <div class="moto__purple">party out with us for three days!</div>
+            </div>
             <p class="home-content__description">
               <b>Lorem ipsum dolor sit amet</b>
               consectetur adipisicing elit, sed do ei usmod tempor incididunt ut
@@ -69,15 +90,341 @@
             <img src="./img/home/singer.png" alt="Singer" class="home-image" />
           </div>
         </section>
-        <section class="party"></section>
-        <section class="reserve-tickets"></section>
-        <section class="carousel"></section>
-        <section class="cool-party"></section>
+        <section class="heart-banner row">
+          <img
+            class="heart-banner__spiral"
+            src="./img/party-info/spiral.png"
+            alt="Spiral"
+          />
+          <div class="heart-banner__title-block col-md-6">
+            <h2 class="heart-banner__title">Party your heart out!</h2>
+          </div>
+          <div class="heart-banner__content col-md-6">
+            <p class="heart-banner__description">
+              <b>Lorem ipsum dolor sit amet</b> consectetur adip isicing elit,
+              sed do ei usmod tempor incididunt ut labore et dolore magna
+              aliqua. Ut enim ad minim veniam quis nostrud exercitation.
+            </p>
+            <button class="learn-more">Learn More</button>
+          </div>
+        </section>
+        <section class="party-info">
+          <div class="party-info-background">
+            <img
+              class="party-info-background__paper"
+              src="./img/party-info/paper.png"
+              alt="Paper"
+            />
+            <img
+              class="party-info-background__dots-left"
+              src="./img/party-info/dots-1.png"
+              alt="Dots"
+            />
+            <img
+              class="party-info-background__dots-right"
+              src="./img/party-info/dots-2.png"
+              alt="Dots"
+            />
+          </div>
+          <div class="carousel-dates">
+            <div class="carousel-dates__controls" data-glide-el="controls">
+              <button data-glide-dir="<">
+                <img src="./img/carousel/left.png" alt="Left" />
+              </button>
+              <button data-glide-dir=">">
+                <img src="./img/carousel/right.png" alt="Right" />
+              </button>
+            </div>
+            <div class="carousel-dates__track" data-glide-el="track">
+              <ul class="carousel-dates__slides" style="display: flex">
+                <li class="carousel-dates__slide">
+                  <div class="date">
+                    <img
+                      src="./img/party-info/spin.png"
+                      alt=""
+                      class="date__decorative"
+                    />
+
+                    <h2 class="date__title">01/03</h2>
+                    <div class="moto">
+                      <div class="moto__black">
+                        a place to quench your thirst for music
+                      </div>
+                      <div class="moto__purple">
+                        party out with us for three days!
+                      </div>
+                    </div>
+                    <div class="date__descriptions row">
+                      <p class="date__description col-md-6">
+                        <b>Lorem ipsum dolor sit amet</b> consectetur
+                        adipisicing elit, sed do ei usmod tempor incidi dunt ut
+                        labore et dolore magna aliqua.
+                      </p>
+                      <p class="date__description col-md-6">
+                        <b>Lorem ipsum dolor sit amet</b> consectetur
+                        adipisicing elit, sed do ei usmod tempor incidi dunt ut
+                        labore et dolore magna aliqua.
+                      </p>
+                    </div>
+                  </div>
+                </li>
+                <li class="carousel-dates__slide">
+                  <div class="date">
+                    <img
+                      src="./img/party-info/spin.png"
+                      alt=""
+                      class="date__decorative"
+                    />
+                    <h2 class="date__title">01/03</h2>
+                    <div class="moto">
+                      <div class="moto__black">
+                        a place to quench your thirst for music
+                      </div>
+                      <div class="moto__purple">
+                        party out with us for three days!
+                      </div>
+                    </div>
+                    <div class="date__descriptions row">
+                      <p class="date__description col-md-6">
+                        <b>Lorem ipsum dolor sit amet</b> consectetur
+                        adipisicing elit, sed do ei usmod tempor incidi dunt ut
+                        labore et dolore magna aliqua.
+                      </p>
+                      <p class="date__description col-md-6">
+                        <b>Lorem ipsum dolor sit amet</b> consectetur
+                        adipisicing elit, sed do ei usmod tempor incidi dunt ut
+                        labore et dolore magna aliqua.
+                      </p>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <section class="reserve-tickets">
+          <div class="reserve-tickets-top-images row">
+            <img
+              class="reserve-tickets-top-images__top-left col-md-4"
+              src="./img/reserve-tickets/left-top-image.png"
+              alt="Decorative Image"
+            />
+            <div class="reserve-tickets-top-images__top col-md-8">
+              <img
+                src="./img/reserve-tickets/top-image.png"
+                alt="Decorative Image"
+              />
+            </div>
+          </div>
+          <div class="reserve-tickets-contents row">
+            <div class="reserve-tickets-top-images__left col-md-4">
+              <img
+                src="./img/reserve-tickets/left-image.png"
+                alt="Decorative Image"
+              />
+            </div>
+            <div class="reserve-tickets-content col-md-8">
+              <h2 class="reserve-tickets-content__title">reserve tickets</h2>
+              <img
+                class="reserve-tickets-content__stroke"
+                src="./img/reserve-tickets/stroke.png"
+                alt="Stroke"
+              />
+              <div class="reserve-tickets-content__descriptions row">
+                <div
+                  class="reserve-tickets-content__description-container col-md-6"
+                >
+                  <p class="reserve-tickets-content__description">
+                    <b>Lorem ipsum dolor sit amet</b> consectetur adip isicing
+                    elit, sed do ei usmod tempor incididunt ut labore et dolore
+                    magna aliqua. Ut enim ad minim veniam quis nostrud
+                    exercitation.
+                  </p>
+                  <button class="learn-more">Learn More</button>
+                </div>
+                <div
+                  class="reserve-tickets-content__description-container col-md-6"
+                >
+                  <p class="reserve-tickets-content__description">
+                    <b>Lorem ipsum dolor sit amet</b> consectetur adip isicing
+                    elit, sed do ei usmod tempor incididunt ut labore et dolore
+                    magna aliqua. Ut enim ad minim veniam quis nostrud
+                    exercitation.
+                  </p>
+                  <button class="learn-more">Learn More</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="reserve-tickets-images">
+            <img
+              class="reserve-tickets-images__image"
+              src="./img/reserve-tickets/image-1.png"
+              alt="Concert Photo 1"
+            />
+            <img
+              class="reserve-tickets-images__image"
+              src="./img/reserve-tickets/image-2.png"
+              alt="Concert Photo 2"
+            />
+            <img
+              class="reserve-tickets-images__image"
+              src="./img/reserve-tickets/image-3.png"
+              alt="Concert Photo 3"
+            />
+          </div>
+        </section>
+        <section class="party-carousel row">
+          <div class="party-carousel__carousel col-md-6">
+            <img
+              class="party-carousel__paper"
+              src="./img/carousel/paper.png"
+              alt="Paper"
+            />
+            <div class="carousel-info">
+              <div class="carousel-info__track" data-glide-el="track">
+                <ul class="carousel-info__slides">
+                  <li class="carousel-info__slide">
+                    <div class="info">
+                      <img
+                        class="info__spin"
+                        src="./img/carousel/spin.png"
+                        alt="Decorative Spin"
+                      />
+                      <div class="moto">
+                        <div class="moto__black">
+                          a place to quench your thirst for music
+                        </div>
+                        <div class="moto__purple">
+                          party out with us for three days!
+                        </div>
+                      </div>
+                      <p class="info__description">
+                        <b>Lorem ipsum dolor sit amet</b> consectetur
+                        adipisicing elit, sed do ei usmod tempor incididunt ut
+                        labore et dolore magna aliqua.
+                      </p>
+                      <button class="learn-more">Learn More</button>
+                    </div>
+                  </li>
+                  <li class="carousel-info__slide">
+                    <div class="info">
+                      <img
+                        class="info__spin"
+                        src="./img/carousel/spin.png"
+                        alt="Decorative Spin"
+                      />
+                      <div class="moto">
+                        <div class="moto__black">
+                          a place to quench your thirst for music
+                        </div>
+                        <div class="moto__purple">
+                          party out with us for three days!
+                        </div>
+                      </div>
+                      <p class="info__description">
+                        <b>Lorem ipsum dolor sit amet</b> consectetur
+                        adipisicing elit, sed do ei usmod tempor incididunt ut
+                        labore et dolore magna aliqua.
+                      </p>
+                      <button class="learn-more">Learn More</button>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="carousel-info__controls" data-glide-el="controls">
+                <button data-glide-dir="<">
+                  <img src="./img/carousel/left.png" alt="Left" />
+                </button>
+                <button data-glide-dir=">">
+                  <img src="./img/carousel/right.png" alt="Right" />
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="party-carousel__image col-md-6">
+            <img src="./img/carousel/main-image.png" alt="" />
+          </div>
+        </section>
+        <section class="party-cool">
+          <div class="party-cool-image-block">
+            <img
+              class="party-cool-image-block__image"
+              src="./img/cool-party/image.png"
+              alt="Cool Party Image"
+            />
+          </div>
+          <div class="party-cool-background">
+            <img
+              src="./img/cool-party/zig-zag.png"
+              alt="Zig Zag"
+              class="party-cool-background__zig-zag"
+            />
+            <img
+              src="./img/cool-party/spiral.png"
+              alt="Spiral"
+              class="party-cool-background__spiral"
+            />
+            <img
+              src="./img/cool-party/dots.png"
+              alt="Dots"
+              class="party-cool-background__dots"
+            />
+          </div>
+          <div class="party-cool-content row">
+            <div class="party-cool-content__title-block col-md-6">
+              <h2 class="party-cool-content__title">
+                <span class="title-highlight">party like</span> there's no
+                tomorrow
+              </h2>
+            </div>
+            <div class="party-cool-content__description-block col-md-6">
+              <div class="moto">
+                <div class="moto__black">
+                  a place to quench your thirst for music
+                </div>
+                <div class="moto__purple">
+                  party out with us for three days!
+                </div>
+              </div>
+              <p class="party-cool-content__description">
+                <b>Lorem ipsum dolor sit amet</b> consectetur adipisicing elit,
+                sed do ei usmod tempor incididunt ut labore et dolore magna
+                aliqua. Ut enim ad minim veniam.
+              </p>
+            </div>
+          </div>
+        </section>
         <section class="party-heart"></section>
         <section class="stars"></section>
         <section class="news-letter"></section>
       </main>
       <footer class="footer"></footer>
     </div>
+    <!-- <div class="carousel">
+      <div class="carousel__track" data-glide-el="track">
+        <ul class="carousel__slides">
+          <li class="carousel__slide">0</li>
+          <li class="carousel__slide">1</li>
+          <li class="carousel__slide">2</li>
+        </ul>
+      </div>
+      <div class="carousel__controls" data-glide-el="controls">
+        <button data-glide-dir="<">Start</button>
+        <button data-glide-dir=">">End</button>
+      </div>
+    </div> -->
+
+    <!-- <div class="moto">
+      <div class="moto__black">
+        a place to quench your thirst for music
+      </div>
+      <div class="moto__purple">party out with us for three days!</div>
+    </div> -->
+    <script src="node_modules/@glidejs/glide/dist/glide.min.js"></script>
+    <script>
+      new Glide(".carousel-dates").mount();
+      new Glide(".carousel-info").mount();
+    </script>
   </body>
 </html>
