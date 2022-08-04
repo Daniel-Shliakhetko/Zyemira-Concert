@@ -23,12 +23,12 @@
   </head>
   <body>
     <div class="container">
-      <header class="header">
-        <img src="./img/home/logo.png" alt="Logo" />
+      <!-- <header class="header">
         <nav class="navigation">
+          <img src="./img/home/logo.png" alt="Logo" />
           <ul class="navigation__list">
             <li class="navigation__item">
-              <a href="#" class="navigation__link">Home</a>
+              <a href="#" class="navigation__link" autofocus>Home</a>
             </li>
             <li class="navigation__item">
               <a href="#event" class="navigation__link">Event</a>
@@ -41,7 +41,7 @@
             </li>
           </ul>
         </nav>
-      </header>
+      </header> -->
       <main class="content">
         <section class="home row">
           <div class="home-background">
@@ -60,8 +60,13 @@
               src="./img/home/dots.png"
               alt="Dots"
             />
+            <img
+              class="home-background__down"
+              src="./img/home/down.png"
+              alt="Dots"
+            />
           </div>
-          <div class="home-content col-md-9">
+          <div class="home-content col-md-8">
             <div class="music-show-title">
               <img
                 class="music-show-title__stroke"
@@ -86,18 +91,20 @@
               labore et dolore magna aliqua. Ut enim ad minim veniam.
             </p>
           </div>
-          <div class="home-image col-md-3">
+          <div class="home-image col-md-4 d-none d-md-block">
             <img src="./img/home/singer.png" alt="Singer" class="home-image" />
           </div>
         </section>
-        <section class="heart-banner row">
+        <section class="heart-banner row wide-block pink-block">
           <img
             class="heart-banner__spiral"
             src="./img/party-info/spiral.png"
             alt="Spiral"
           />
           <div class="heart-banner__title-block col-md-6">
-            <h2 class="heart-banner__title">Party your heart out!</h2>
+            <h2 class="heart-banner__title">
+              <span class="title-highlight">Party</span> your heart out!
+            </h2>
           </div>
           <div class="heart-banner__content col-md-6">
             <p class="heart-banner__description">
@@ -126,7 +133,7 @@
               alt="Dots"
             />
           </div>
-          <div class="carousel-dates">
+          <div class="carousel-dates wide-block">
             <div class="carousel-dates__controls" data-glide-el="controls">
               <button data-glide-dir="<">
                 <img src="./img/carousel/left.png" alt="Left" />
@@ -217,14 +224,18 @@
             </div>
           </div>
           <div class="reserve-tickets-contents row">
-            <div class="reserve-tickets-top-images__left col-md-4">
+            <div
+              class="reserve-tickets-top-images__left col-md-4 d-none d-md-block"
+            >
               <img
                 src="./img/reserve-tickets/left-image.png"
                 alt="Decorative Image"
               />
             </div>
             <div class="reserve-tickets-content col-md-8">
-              <h2 class="reserve-tickets-content__title">reserve tickets</h2>
+              <h2 class="reserve-tickets-content__title">
+                <span class="title-highlight">reserve</span> tickets
+              </h2>
               <img
                 class="reserve-tickets-content__stroke"
                 src="./img/reserve-tickets/stroke.png"
@@ -240,7 +251,7 @@
                     magna aliqua. Ut enim ad minim veniam quis nostrud
                     exercitation.
                   </p>
-                  <button class="learn-more">Learn More</button>
+                  <button class="learn-more pink">Learn More</button>
                 </div>
                 <div
                   class="reserve-tickets-content__description-container col-md-6"
@@ -251,16 +262,16 @@
                     magna aliqua. Ut enim ad minim veniam quis nostrud
                     exercitation.
                   </p>
-                  <button class="learn-more">Learn More</button>
+                  <button class="learn-more pink">Learn More</button>
                 </div>
               </div>
             </div>
           </div>
-          <div class="reserve-tickets-images">
+          <div class="reserve-tickets-images d-none d-lg-block">
             <img
               class="reserve-tickets-images__image"
-              src="./img/reserve-tickets/image-1.png"
-              alt="Concert Photo 1"
+              src="./img/reserve-tickets/image-3.png"
+              alt="Concert Photo 3"
             />
             <img
               class="reserve-tickets-images__image"
@@ -269,8 +280,8 @@
             />
             <img
               class="reserve-tickets-images__image"
-              src="./img/reserve-tickets/image-3.png"
-              alt="Concert Photo 3"
+              src="./img/reserve-tickets/image-1.png"
+              alt="Concert Photo 1"
             />
           </div>
         </section>
@@ -623,11 +634,34 @@
       </div>
       <div class="moto__purple">party out with us for three days!</div>
     </div> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="node_modules/@glidejs/glide/dist/glide.min.js"></script>
+    <script src="./scripts/header.js"></script>
     <script>
-      new Glide(".carousel-dates").mount();
-      new Glide(".carousel-info").mount();
-      new Glide(".carousel-stars").mount();
+      var dates = new Glide(".carousel-dates");
+      var info = new Glide(".carousel-info").mount();
+      var stars = new Glide(".carousel-stars").mount();
+
+      $(".carousel-dates__controls")
+        .children()
+        .first()
+        .css({ display: "none" });
+
+      dates.on("run", function () {
+        dates.index == 0
+          ? $(".carousel-dates__controls")
+              .children()
+              .first()
+              .css({ display: "none" })
+          : $(".carousel-dates__controls").children().first().css({
+              display: "block",
+            });
+      });
+      dates.mount();
+
+      // $(".carousel-dates").click(() => {
+
+      // });
     </script>
   </body>
 </html>

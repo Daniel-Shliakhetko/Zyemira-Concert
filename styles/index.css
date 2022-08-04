@@ -1,1 +1,179 @@
-/*# sourceMappingURL=index.css.map */
+.home-background {
+  width: 100%;
+  height: 0;
+  position: relative;
+}
+.home-background__paper {
+  top: 0;
+  left: 0;
+  position: absolute;
+}
+.home-background__zig-zag {
+  top: 12.5rem;
+  left: 37.5%;
+  position: absolute;
+}
+.home-background__dots {
+  top: 0;
+  left: 13rem;
+  position: absolute;
+}
+.home-background__down {
+  bottom: 0;
+  left: 6rem;
+  position: absolute;
+}
+
+.music-show-title {
+  max-width: 50%;
+  height: auto;
+  margin-bottom: 2rem;
+  display: flex;
+}
+.music-show-title__stroke {
+  margin-right: 0.5rem;
+}
+.home-content {
+  padding-top: 7.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.home-content .moto__black {
+  transform: translate(-10.5rem, -2.5rem) rotate(-5deg);
+}
+.home-content .moto__purple {
+  transform: translate(-4rem, 0) rotate(-3deg);
+}
+.home-content__description {
+  padding: 0 25%;
+  text-align: center;
+}
+
+.home-image {
+  width: 100%;
+}
+
+.heart-banner {
+  padding: 5em 0;
+  position: relative;
+}
+.heart-banner__spiral {
+  left: 0;
+  bottom: 0;
+  position: absolute;
+}
+.heart-banner__title .title-highlight {
+  color: #e0e0e0;
+}
+.party-info-background {
+  position: relative;
+  z-index: 4;
+}
+.party-info-background__paper {
+  transform: translateY(-70%);
+  position: absolute;
+}
+.party-info-background__dots-left {
+  top: 15rem;
+  left: 0;
+  position: absolute;
+}
+.party-info-background__dots-right {
+  top: 10rem;
+  right: 0;
+  position: absolute;
+}
+
+.carousel-dates {
+  padding-top: 9rem;
+  position: relative;
+}
+.carousel-dates__controls {
+  right: 20%;
+  position: absolute;
+  display: flex;
+}
+.carousel-dates__controls button:first-child {
+  margin-right: 9rem;
+}
+.carousel-dates__slides {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+.carousel-dates__slide {
+  height: 30rem;
+}
+
+.date {
+  padding-top: 5rem;
+  min-height: 7rem;
+  position: relative;
+}
+.date__decorative {
+  left: 10%;
+  position: absolute;
+}
+.date__title {
+  top: 0;
+  right: 7rem;
+  position: absolute;
+  font-family: "Monda", sans-serif;
+  font-size: 2em;
+  font-weight: 700;
+  color: #9913e1;
+}
+.date .moto__black {
+  transform: translate(-19rem, -2.5rem) rotate(-5deg);
+}
+.date .moto__purple {
+  transform: translate(3rem, 0) rotate(3deg);
+}
+.reserve-tickets {
+  position: relative;
+}
+
+.reserve-tickets-top-images__top, .reserve-tickets-top-images__left {
+  background-color: #9913e1;
+}
+.reserve-tickets-top-images__top img, .reserve-tickets-top-images__left img {
+  opacity: 0.4;
+  filter: contrast(125%) brightness(250%);
+}
+
+.reserve-tickets-content {
+  padding: 0 3.5rem !important;
+  padding-top: 6rem !important;
+  position: relative;
+}
+.reserve-tickets-content__title {
+  position: relative;
+  font-size: 4.5rem;
+  padding-bottom: 1rem;
+  z-index: 6;
+}
+.reserve-tickets-content__stroke {
+  top: 9rem;
+  right: 13rem;
+  position: absolute;
+}
+.reserve-tickets-images {
+  bottom: 5rem;
+  right: -4rem;
+  position: absolute;
+  min-width: 100rem;
+  display: flex;
+  flex-direction: row-reverse;
+}
+.reserve-tickets-images__image {
+  float: right;
+  margin-right: 1rem;
+}
+
+@media (max-width: 767px) and (min-width: 320px) {
+  .heart-banner__spiral {
+    display: none;
+  }
+}/*# sourceMappingURL=index.css.map */
