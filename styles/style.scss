@@ -156,6 +156,30 @@ button {
         color: $pink;
     }
 
+    .footer & {
+        position: relative;
+        $gray: #545454;
+
+        border: 0.25rem solid $gray;
+        color: $gray;
+
+        &:hover {
+            background-color: $gray;
+            color: $white;
+        }
+        &::after{
+            width:19px;
+            height:17px;
+            top:50%;
+            right:10%;
+            position:absolute;
+            transform:translateY(-50%);
+            content:"";
+            background-image: url('../img/footer/triangle.png');
+        }
+
+    }
+
     &.pink {
         border: 0.25rem solid $purple;
         color: $purple;
@@ -234,22 +258,40 @@ button {
 }
 
 .footer {
+    padding: 10rem 10%;
+    position: relative;
 
     &__title {}
 
     &__list {}
 
-    &__item {}
+    &__item {
+        margin-top: 1rem;
+    }
 
-    &__link {}
-
+    &__link {
+        font-family: $font-text;
+    }
 }
 
 .footer-background {
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
 
-    &__dots {}
+    &__dots {
+        bottom: 0;
+        left: 0;
+        position: absolute;
+    }
 
-    &__paper {}
+    &__paper {
+        right: 0;
+        bottom: 0;
+        position: absolute;
+    }
 }
 
 .footer-logo {}
@@ -280,12 +322,13 @@ button {
         transform: translateX(0);
         font-size: 0.7rem;
         min-height: 7.5rem;
+
         &__black {
-            transform: translate(-10.5rem, -2.5rem) rotate(-5deg)!important;
+            transform: translate(-10.5rem, -2.5rem) rotate(-5deg) !important;
         }
 
         &__purple {
-            transform: translate(-4rem, 0)rotate(-3deg)!important;
+            transform: translate(-4rem, 0)rotate(-3deg) !important;
         }
     }
 
