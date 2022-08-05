@@ -16,7 +16,9 @@ $font-text: 'Monda', sans-serif;
 //     }
 // }
 
-.home {}
+.home {
+    position: relative;
+}
 
 .home-background {
     width: 100%;
@@ -43,8 +45,8 @@ $font-text: 'Monda', sans-serif;
     }
 
     &__down {
-        bottom: 0;
-        left: 6rem;
+        bottom: 5rem;
+        left: 5rem;
         position: absolute;
     }
 }
@@ -226,19 +228,18 @@ $font-text: 'Monda', sans-serif;
 .reserve-tickets-content {
     padding: 0 3.5rem !important;
     padding-top: 6rem !important;
-    position:relative;
+    position: relative;
 
     &__title {
         position: relative;
-        font-size:4.5rem;
-        padding-bottom:1rem;
-        z-index:6;
+        padding-bottom: 1rem;
+        z-index: 6;
     }
 
     &__stroke {
-        top:9rem;
-        right:13rem;
-        position:absolute;
+        top: 9rem;
+        right: 13rem;
+        position: absolute;
     }
 
     &__descriptions {}
@@ -263,121 +264,306 @@ $font-text: 'Monda', sans-serif;
 }
 
 .party-carousel {
-    &__carousel {}
+    position: relative;
+    z-index: 4;
 
-    &__paper {}
+    &__carousel {
+        padding-top: 5rem;
+    }
+
+    &__paper {
+        top: -25%;
+        left: -5%;
+        position: absolute;
+    }
 
     &__image {}
 }
 
 .carousel-info {
+    padding: 5rem 15%;
+    position: relative;
 
     &__track {}
 
-    &__slides {}
+    &__slides {
+        display: flex;
+    }
 
-    &__slide {}
+    &__slide {
+        min-height: fit-content;
+    }
 
-    &__controls {}
+    &__controls {
+        padding: 0 15%;
+        left: 50%;
+        width: 100%;
+        bottom: 3rem;
+        position: absolute;
+        display: flex;
+        justify-content: space-between;
+        transform: translate(-50%);
+    }
 }
 
 .info {
+    max-width: 100%;
+    position: relative;
+    padding: 1rem;
+    min-height: 30rem;
+    display: flex;
+    flex-direction: column;
 
-    &__spin {}
+    &__spin {
+        top: 0.5rem;
+        position: absolute;
+    }
 
 
-    &__description {}
+    .moto {
+        padding-bottom: 4rem;
+
+        &__black {
+            transform: translate(-10.5rem, -2.5rem) rotate(-7deg);
+        }
+
+        &__purple {
+            transform: translate(-4rem, 0)rotate(-3deg);
+        }
+    }
+
+    &__description {
+        position: relative;
+        padding-bottom: 4rem;
+    }
+
+    .learn-more {
+        position: relative;
+        margin: 0 auto;
+    }
 
 }
 
 .party-cool {}
 
-.party-cool-image-block {
 
-    &__image {}
+.party-cool-image-block {
+    position: relative;
+    z-index: 6;
+    background-color: $purple;
+
+    &__image {
+        opacity: 0.4;
+        filter: contrast(125%) brightness(250%);
+    }
 }
 
+
 .party-cool-background {
+    position: relative;
 
-    &__zig-zag {}
+    &__zig-zag {
+        top: 3rem;
+        left: 0;
+        position: absolute;
+    }
 
-    &__spiral {}
+    &__spiral {
+        top: 12rem;
+        right: 0;
+        position: absolute;
+    }
 
-    &__dots {}
+    &__dots {
+        top: -8rem;
+        right: 0;
+        position: absolute;
+    }
 }
 
 .party-cool-content {
+    padding: 8.5rem 0;
+    min-height: 10rem;
 
     &__title-block {}
 
     &__title {}
 
+    .moto {
+
+        &__black {
+            transform: translate(-10.5rem, -2.5rem) rotate(-5deg);
+        }
+
+        &__purple {
+            transform: translate(-4rem, 0)rotate(-3deg);
+        }
+    }
+
     &__description-block {}
 
-    &__description {}
+    &__description {
+        text-align: center;
+    }
 }
 
 .party-heart {
+    z-index: 6;
+    position: relative;
 
     &__image {}
 }
 
 .party-heart-content-background {
+    width: 100%;
+    height: 100%;
+    position: absolute;
 
-    &__paper {}
 
-    &__down-right {}
+    &__paper {
+        max-height:100%;
+        top: -0.1rem;
+        right: 0;
+        position: absolute;
+    }
 
-    &__down {}
+    &__down-right {
+        left: 2rem;
+        top: 8rem;
+        position: absolute;
 
-    &__up-left {}
+    }
+
+    &__down {
+        left: 8rem;
+        top: 3rem;
+        position: absolute;
+
+    }
+
+    &__up-left {
+        right: 5rem;
+        bottom: 3rem;
+        position: absolute;
+
+    }
 }
 
 .party-heart-content {
+    display: flex;
+    align-items: center;
+    flex-direction: center;
 
-    &__content {}
+    &__content {
+        padding: 20%;
+    }
 
-    &__title {}
+    &__title {
+        .title-highlight {
+            color: $white;
+        }
 
-    &__description {}
+        padding-bottom: 2rem;
+    }
+
+    &__description {
+        padding-bottom: 2rem;
+    }
 }
 
-.stars {}
+.stars {
+    position: relative;
+}
 
-.stars-backgorund {
+.stars-background {
+    position: absolute;
+    height: 100%;
+    width: 100%;
 
-    &__paper-left {}
+    &__paper-left {
+        top: -2rem;
+        left: 0;
+        position: absolute;
+    }
 
-    &__dots {}
+    &__dots {
+        top: 0;
+        left: 10%;
+        position: absolute;
+    }
 
-    &__paper-right {}
+    &__paper-right {
+        top: -5rem;
+        right: 0;
+        position: absolute;
+    }
 }
 
 .carousel-stars {
+    position:relative;
+    padding: 15rem 0;
 
     &__track {}
 
-    &__slides {}
+    &__slides {
+        display:flex;
+    }
 
-    &__slide {}
+    &__slide {
 
-    &__controls {}
+    }
+
+    &__controls {
+        padding:0 10%;
+        display:flex;
+        justify-content: space-between;
+        width:100%;
+        height:3rem;
+        top:50%;
+        bottom:0;
+        position:absolute;
+        transform:translateY(-50%);
+    }
 }
 
 .star {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 0 25%;
 
-    &__title {}
+    &__title {
+        text-align:center;
+        font-size:4.5em;
+    }
 
-    &__description {}
+    &__description {
+        margin: 2rem 0;
+        text-align:center;
+    }
 
-    &__stroke {}
+    &__stroke {
+
+    }
 }
 
 .star-logo {
+    position: relative;
+    display:flex;
+    justify-content: center;
+    margin-bottom:3rem;
 
-    &__circle {}
+    &__circle {
+        position: relative;
+    }
 
-    &__star {}
+    &__star {
+        top: 50%;
+        left: 50%;
+        position: absolute;
+        transform: translate(-50%, -50%);
+        z-index: 6;
+    }
 }
 
 .news-letter {}
@@ -412,5 +598,9 @@ $font-text: 'Monda', sans-serif;
 @media (max-width:767px) and (min-width:320px) {
     .heart-banner__spiral {
         display: none;
+    }
+
+    .carousel-info {
+        padding: 0rem 1rem;
     }
 }

@@ -1,3 +1,7 @@
+.home {
+  position: relative;
+}
+
 .home-background {
   width: 100%;
   height: 0;
@@ -19,8 +23,8 @@
   position: absolute;
 }
 .home-background__down {
-  bottom: 0;
-  left: 6rem;
+  bottom: 5rem;
+  left: 5rem;
   position: absolute;
 }
 
@@ -150,7 +154,6 @@
 }
 .reserve-tickets-content__title {
   position: relative;
-  font-size: 4.5rem;
   padding-bottom: 1rem;
   z-index: 6;
 }
@@ -172,8 +175,243 @@
   margin-right: 1rem;
 }
 
+.party-carousel {
+  position: relative;
+  z-index: 4;
+}
+.party-carousel__carousel {
+  padding-top: 5rem;
+}
+.party-carousel__paper {
+  top: -25%;
+  left: -5%;
+  position: absolute;
+}
+.carousel-info {
+  padding: 5rem 15%;
+  position: relative;
+}
+.carousel-info__slides {
+  display: flex;
+}
+.carousel-info__slide {
+  min-height: -webkit-fit-content;
+  min-height: -moz-fit-content;
+  min-height: fit-content;
+}
+.carousel-info__controls {
+  padding: 0 15%;
+  left: 50%;
+  width: 100%;
+  bottom: 3rem;
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  transform: translate(-50%);
+}
+
+.info {
+  max-width: 100%;
+  position: relative;
+  padding: 1rem;
+  min-height: 30rem;
+  display: flex;
+  flex-direction: column;
+}
+.info__spin {
+  top: 0.5rem;
+  position: absolute;
+}
+.info .moto {
+  padding-bottom: 4rem;
+}
+.info .moto__black {
+  transform: translate(-10.5rem, -2.5rem) rotate(-7deg);
+}
+.info .moto__purple {
+  transform: translate(-4rem, 0) rotate(-3deg);
+}
+.info__description {
+  position: relative;
+  padding-bottom: 4rem;
+}
+.info .learn-more {
+  position: relative;
+  margin: 0 auto;
+}
+
+.party-cool-image-block {
+  position: relative;
+  z-index: 6;
+  background-color: #9913e1;
+}
+.party-cool-image-block__image {
+  opacity: 0.4;
+  filter: contrast(125%) brightness(250%);
+}
+
+.party-cool-background {
+  position: relative;
+}
+.party-cool-background__zig-zag {
+  top: 3rem;
+  left: 0;
+  position: absolute;
+}
+.party-cool-background__spiral {
+  top: 12rem;
+  right: 0;
+  position: absolute;
+}
+.party-cool-background__dots {
+  top: -8rem;
+  right: 0;
+  position: absolute;
+}
+
+.party-cool-content {
+  padding: 8.5rem 0;
+  min-height: 10rem;
+}
+.party-cool-content .moto__black {
+  transform: translate(-10.5rem, -2.5rem) rotate(-5deg);
+}
+.party-cool-content .moto__purple {
+  transform: translate(-4rem, 0) rotate(-3deg);
+}
+.party-cool-content__description {
+  text-align: center;
+}
+
+.party-heart {
+  z-index: 6;
+  position: relative;
+}
+.party-heart-content-background {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+.party-heart-content-background__paper {
+  max-height: 100%;
+  top: -0.1rem;
+  right: 0;
+  position: absolute;
+}
+.party-heart-content-background__down-right {
+  left: 2rem;
+  top: 8rem;
+  position: absolute;
+}
+.party-heart-content-background__down {
+  left: 8rem;
+  top: 3rem;
+  position: absolute;
+}
+.party-heart-content-background__up-left {
+  right: 5rem;
+  bottom: 3rem;
+  position: absolute;
+}
+
+.party-heart-content {
+  display: flex;
+  align-items: center;
+  flex-direction: center;
+}
+.party-heart-content__content {
+  padding: 20%;
+}
+.party-heart-content__title {
+  padding-bottom: 2rem;
+}
+.party-heart-content__title .title-highlight {
+  color: #e0e0e0;
+}
+.party-heart-content__description {
+  padding-bottom: 2rem;
+}
+
+.stars {
+  position: relative;
+}
+
+.stars-background {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+.stars-background__paper-left {
+  top: -2rem;
+  left: 0;
+  position: absolute;
+}
+.stars-background__dots {
+  top: 0;
+  left: 10%;
+  position: absolute;
+}
+.stars-background__paper-right {
+  top: -5rem;
+  right: 0;
+  position: absolute;
+}
+
+.carousel-stars {
+  position: relative;
+  padding: 15rem 0;
+}
+.carousel-stars__slides {
+  display: flex;
+}
+.carousel-stars__controls {
+  padding: 0 10%;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 3rem;
+  top: 50%;
+  bottom: 0;
+  position: absolute;
+  transform: translateY(-50%);
+}
+
+.star {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 0 25%;
+}
+.star__title {
+  text-align: center;
+  font-size: 4.5em;
+}
+.star__description {
+  margin: 2rem 0;
+  text-align: center;
+}
+.star-logo {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 3rem;
+}
+.star-logo__circle {
+  position: relative;
+}
+.star-logo__star {
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  z-index: 6;
+}
+
 @media (max-width: 767px) and (min-width: 320px) {
   .heart-banner__spiral {
     display: none;
+  }
+  .carousel-info {
+    padding: 0rem 1rem;
   }
 }/*# sourceMappingURL=index.css.map */
