@@ -17,6 +17,7 @@
       rel="stylesheet"
       href="node_modules/@glidejs/glide/dist/css/glide.core.min.css"
     />
+    <link href="./node_modules/aos/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="styles/style.css" />
     <link rel="stylesheet" href="styles/index.css" />
     <title>Document</title>
@@ -74,7 +75,7 @@
             alt="Dots"
           />
           <div class="home-content col-md-8">
-            <div class="music-show-title">
+            <div class="music-show-title" data-aos="zoom-in">
               <img
                 class="music-show-title__stroke"
                 src="./img/home/stroke.png"
@@ -86,23 +87,23 @@
                 alt="MUSIC SHOW"
               />
             </div>
-            <div class="moto">
+            <div class="moto" data-aos="fade-left">
               <div class="moto__black">
                 a place to quench your thirst for music
               </div>
               <div class="moto__purple">party out with us for three days!</div>
             </div>
-            <p class="home-content__description">
+            <p class="home-content__description" data-aos="fade-left">
               <b>Lorem ipsum dolor sit amet</b>
               consectetur adipisicing elit, sed do ei usmod tempor incididunt ut
               labore et dolore magna aliqua. Ut enim ad minim veniam.
             </p>
           </div>
-          <div class="home-image col-md-4 d-none d-md-block">
+          <div class="home-image col-md-4 d-none d-md-block" data-aos="fade-left" data-aos-duration="750">
             <img src="./img/home/singer.png" alt="Singer" class="home-image" />
           </div>
         </section>
-        <section class="heart-banner row wide-block pink-block" >
+        <section class="heart-banner row wide-block pink-block" data-aos="fade-down">
           <div class="anchor" id="event"></div>
           <img
             class="heart-banner__spiral"
@@ -141,7 +142,7 @@
               alt="Dots"
             />
           </div>
-          <div class="carousel-dates wide-block">
+          <div class="carousel-dates wide-block" data-aos="zoom-in" data-aos-duration="750">
             <div class="carousel-dates__controls" data-glide-el="controls">
               <button data-glide-dir="<">
                 <img src="./img/carousel/left.png" alt="Left" />
@@ -232,7 +233,7 @@
               />
             </div>
           </div>
-          <div class="reserve-tickets-contents row">
+          <div class="reserve-tickets-contents row" >
             <div
               class="reserve-tickets-top-images__left col-md-4 d-none d-md-block"
             >
@@ -241,7 +242,7 @@
                 alt="Decorative Image"
               />
             </div>
-            <div class="reserve-tickets-content col-md-8">
+            <div class="reserve-tickets-content col-md-8" data-aos="zoom-in" data-aos-duration="750">
               <h2 class="reserve-tickets-content__title">
                 <span class="title-highlight">reserve</span> tickets
               </h2>
@@ -276,7 +277,7 @@
               </div>
             </div>
           </div>
-          <div class="reserve-tickets-images d-none d-xl-block">
+          <div class="reserve-tickets-images d-none d-xl-block" data-aos="fade-right" data-aos-duration="750">
             <img
               class="reserve-tickets-images__image"
               src="./img/reserve-tickets/image-3.png"
@@ -300,7 +301,7 @@
             src="./img/carousel/paper.png"
             alt="Paper"
           />
-          <div class="party-carousel__carousel col-md-6">
+          <div class="party-carousel__carousel col-md-6" data-aos="fade-right" data-aos-duration="750">
             <div class="carousel-info">
               <div class="carousel-info__track" data-glide-el="track">
                 <ul class="carousel-info__slides">
@@ -362,13 +363,13 @@
               </div>
             </div>
           </div>
-          <div class="party-carousel__image col-md-6 d-none d-md-block">
+          <div class="party-carousel__image col-md-6 d-none d-md-block" data-aos="fade-left" data-aos-duration="750">
             <img src="./img/carousel/main-image.png" alt="" />
           </div>
         </section>
         <section class="party-cool">
           <div class="anchor" id="about"></div>
-          <div class="party-cool-image-block">
+          <div class="party-cool-image-block" data-aos="fade-down" data-aos-duration="750">
             <img
               class="party-cool-image-block__image"
               src="./img/cool-party/image.png"
@@ -393,13 +394,13 @@
             />
           </div>
           <div class="party-cool-content row wide-block">
-            <div class="party-cool-content__title-block col-md-6">
+            <div class="party-cool-content__title-block col-md-6" data-aos="fade-right" data-aos-duration="750">
               <h2 class="party-cool-content__title">
                 <span class="title-highlight">party like</span> there's no
                 tomorrow
               </h2>
             </div>
-            <div class="party-cool-content__description-block col-md-6">
+            <div class="party-cool-content__description-block col-md-6" data-aos="fade-left" data-aos-duration="750">
               <div class="moto">
                 <div class="moto__black">
                   a place to quench your thirst for music
@@ -417,10 +418,10 @@
           </div>
         </section>
         <section class="party-heart row pink-block">
-          <div class="party-heart__image col-md-6 d-none d-md-block">
+          <div class="party-heart__image col-md-6 d-none d-md-block" data-aos="fade-right" data-aos-duration="750">
             <img src="./img/party-heart/image.png" alt="Party Heart Image" />
           </div>
-          <div class="party-heart-content col-md-6">
+          <div class="party-heart-content col-md-6" data-aos="fade-left" data-aos-duration="750">
             <div class="party-heart-content-background">
               <img
                 class="party-heart-content-background__paper d-none d-md-block"
@@ -474,7 +475,7 @@
               class="stars-background__paper-right"
             />
           </div>
-          <div class="carousel-stars">
+          <div class="carousel-stars" data-aos="fade-down" data-aos-duration="750">
             <div class="carousel-stars__track" data-glide-el="track">
               <ul class="carousel-stars__slides">
                 <li class="carousel-stars__slide">
@@ -548,7 +549,7 @@
           </div>
         </section>
         <section class="news-letter row pink-block">
-          <div class="news-letter-content col-md-6">
+          <div class="news-letter-content col-md-6" data-aos="fade-right" data-aos-duration="750">
             <img
               src="./img/news-letter/paper.png"
               alt="Paper"
@@ -585,7 +586,7 @@
               />
             </form>
           </div>
-          <div class="news-letter-image col-md-6">
+          <div class="news-letter-image col-md-6" data-aos="fade-left" data-aos-duration="750">
             <img src="./img/news-letter/image.png" alt="News Letter Image" />
           </div>
         </section>
@@ -603,10 +604,10 @@
             alt="Paper"
           />
         </div>
-        <div class="footer-logo col-md-3">
+        <div class="footer-logo col-md-3" data-aos="zoom-out-left" >
           <img src="./img/footer/logo.png" alt="Logo" />
         </div>
-        <div class="footer-fast-links col-md-3">
+        <div class="footer-fast-links col-md-3" data-aos="zoom-out-left" data-aos-delay="300">
           <h3 class="footer__title">Fast Links</h3>
           <ul class="footer__list">
             <li class="footer__item">
@@ -632,7 +633,7 @@
             </li>
           </ul>
         </div>
-        <div class="footer-performers col-md-3">
+        <div class="footer-performers col-md-3" data-aos="zoom-out-left" data-aos-delay="600">
           <h3 class="footer__title">Performers</h3>
           <ul class="footer__list">
             <li class="footer__item">
@@ -652,7 +653,7 @@
             </li>
           </ul>
         </div>
-        <div class="footer-learn-more col-md-3 d-none d-lg-block">
+        <div class="footer-learn-more col-md-3 d-none d-lg-block" data-aos="zoom-out-left" data-aos-delay="900">
           <button class="learn-more">Learn More</button>
         </div>
       </footer>
@@ -678,9 +679,12 @@
       <div class="moto__purple">party out with us for three days!</div>
     </div> -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="node_modules/@glidejs/glide/dist/glide.min.js"></script>
+    <script src="./node_modules/@glidejs/glide/dist/glide.min.js"></script>
+    <script src="./node_modules/aos/dist/aos.js"></script>
     <script src="./scripts/header.js"></script>
     <script>
+      AOS.init();
+
       var dates = new Glide(".carousel-dates");
       var info = new Glide(".carousel-info").mount();
       var stars = new Glide(".carousel-stars").mount();
