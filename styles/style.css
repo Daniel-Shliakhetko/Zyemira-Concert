@@ -74,6 +74,7 @@ img {
 button {
   background: none;
   border: none;
+  outline: 0;
 }
 button:focus {
   outline: 0;
@@ -184,10 +185,12 @@ button:focus {
 }
 
 .header {
-  min-height: 4rem;
+  min-height: 5rem;
+  height: 14rem;
+  display: flex;
+  align-items: center;
   width: 100%;
   max-width: 1440px;
-  padding-top: 5rem;
   position: fixed;
   z-index: 10;
 }
@@ -211,15 +214,88 @@ button:focus {
   text-transform: uppercase;
   transition: 0.25s;
 }
-.navigation__link:focus {
+.navigation__link:hover {
   font-size: 1.25rem;
   font-weight: bold;
   color: #9913e1;
+}
+.navigation__background {
+  opacity: 0;
+  top: 0;
+  left: 0;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: 4;
+  background-color: #ddd;
+  transition: 0.25s;
+}
+.navigation__toggler {
+  top: 2rem;
+  right: 10%;
+  position: absolute;
+  display: none;
+}
+.navigation__toggler-shape:after, .navigation__toggler-shape:before, .navigation__toggler-shape {
+  position: relative;
+  width: 2.5rem;
+  height: 0.25rem;
+  background-color: #000;
+  transition: 0.25s;
+}
+.navigation__toggler-shape:after, .navigation__toggler-shape:before {
+  top: -0.5rem;
+  left: 0;
+  position: absolute;
+  content: "";
+}
+.navigation__toggler-shape:before {
+  top: 0.5rem;
+  left: 0;
+}
+.active .navigation__toggler-shape {
+  transform: rotate(45deg);
+}
+.active .navigation__toggler-shape:before, .active .navigation__toggler-shape:after {
+  top: 0;
+  left: 0;
+  transform: rotate(-90deg);
+}
+.navigation.mobile {
+  min-height: 5rem;
+  padding-right: 3rem;
+}
+.mobile .navigation__logo {
+  top: 0;
+  left: 5rem;
+  position: absolute;
+}
+.mobile .navigation__list {
+  padding-left: 0;
+  padding-top: 5rem;
+  padding-bottom: 1rem;
+  display: block;
+}
+.mobile .navigation__toggler {
+  display: block;
+}
+
+.anchor {
+  position: absolute;
+  top: -4.5rem;
 }
 
 .footer {
   padding: 10rem 10%;
   position: relative;
+}
+.footer .col-md-3 {
+  margin-bottom: 3rem;
+}
+.footer__title {
+  font-family: "Monda", sans-serif;
+  font-weight: 700;
+  font-size: 1.25em;
 }
 .footer__item {
   margin-top: 1rem;
@@ -263,6 +339,9 @@ button:focus {
   }
   .wide-block {
     padding: 1em !important;
+  }
+  .footer {
+    padding: 5rem 10% !important;
   }
 }
 /* width */

@@ -23,12 +23,12 @@
   </head>
   <body>
     <div class="container">
-      <!-- <header class="header">
+      <header class="header">
         <nav class="navigation">
-          <img src="./img/home/logo.png" alt="Logo" />
+          <img class="navigation__logo" src="./img/home/logo.png" alt="Logo" />
           <ul class="navigation__list">
             <li class="navigation__item">
-              <a href="#" class="navigation__link" autofocus>Home</a>
+              <a href="#" class="navigation__link">Home</a>
             </li>
             <li class="navigation__item">
               <a href="#event" class="navigation__link">Event</a>
@@ -40,8 +40,12 @@
               <a href="#about" class="navigation__link">About</a>
             </li>
           </ul>
+          <div class="navigation__background"></div>
+          <button class="navigation__toggler">
+            <div class="navigation__toggler-shape"></div>
+          </button>
         </nav>
-      </header> -->
+      </header>
       <main class="content">
         <section class="home row">
           <div class="home-background">
@@ -95,7 +99,8 @@
             <img src="./img/home/singer.png" alt="Singer" class="home-image" />
           </div>
         </section>
-        <section class="heart-banner row wide-block pink-block">
+        <section class="heart-banner row wide-block pink-block" >
+          <div class="anchor" id="event"></div>
           <img
             class="heart-banner__spiral"
             src="./img/party-info/spiral.png"
@@ -182,7 +187,7 @@
                       alt=""
                       class="date__decorative"
                     />
-                    <h2 class="date__title">01/03</h2>
+                    <h2 class="date__title">08/03</h2>
                     <div class="moto">
                       <div class="moto__black">
                         a place to quench your thirst for music
@@ -210,6 +215,7 @@
           </div>
         </section>
         <section class="reserve-tickets">
+          <div class="anchor" id="tickets"></div>
           <div class="reserve-tickets-top-images row">
             <img
               class="reserve-tickets-top-images__top-left col-md-4"
@@ -358,6 +364,7 @@
           </div>
         </section>
         <section class="party-cool">
+          <div class="anchor" id="about"></div>
           <div class="party-cool-image-block">
             <img
               class="party-cool-image-block__image"
@@ -511,7 +518,7 @@
                       />
                     </div>
                     <h3 class="star__title">
-                      <span class="title-highlight">John</span> Doe
+                      <span class="title-highlight">Mr.</span> Erick
                     </h3>
                     <p class="star__description">
                       <b>Lorem ipsum dolor sit amet</b> consectetur adipisicing
@@ -583,7 +590,7 @@
       <footer class="footer row">
         <div class="footer-background">
           <img
-            class="footer-background__dots"
+            class="footer-background__dots d-none d-md-block"
             src="./img/footer/dots.png"
             alt="Dots"
           />
@@ -642,7 +649,7 @@
             </li>
           </ul>
         </div>
-        <div class="footer-learn-more col-md-3">
+        <div class="footer-learn-more col-md-3 d-none d-md-block">
           <button class="learn-more">Learn More</button>
         </div>
       </footer>
@@ -691,10 +698,6 @@
             });
       });
       dates.mount();
-
-      // $(".carousel-dates").click(() => {
-
-      // });
     </script>
   </body>
 </html>

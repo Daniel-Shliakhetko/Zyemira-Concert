@@ -96,6 +96,7 @@ img {
 button {
     background: none;
     border: none;
+    outline: 0;
 
     &:focus {
         outline: 0;
@@ -167,14 +168,15 @@ button {
             background-color: $gray;
             color: $white;
         }
-        &::after{
-            width:19px;
-            height:17px;
-            top:50%;
-            right:10%;
-            position:absolute;
-            transform:translateY(-50%);
-            content:"";
+
+        &::after {
+            width: 19px;
+            height: 17px;
+            top: 50%;
+            right: 10%;
+            position: absolute;
+            transform: translateY(-50%);
+            content: "";
             background-image: url('../img/footer/triangle.png');
         }
 
@@ -218,10 +220,13 @@ button {
 }
 
 .header {
-    min-height: 4rem;
+    min-height: 5rem;
+    height: 14rem;
+    display: flex;
+    align-items: center;
     width: 100%;
     max-width: 1440px;
-    padding-top: 5rem;
+    // padding-top: 5rem;
     position: fixed;
     z-index: 10;
 }
@@ -234,8 +239,12 @@ button {
     justify-content: space-between;
     align-items: center;
 
+    &__logo {
+
+    }
 
     &__list {
+        // padding-left: 8rem;
         width: 60%;
         display: flex;
         justify-content: space-between;
@@ -249,19 +258,122 @@ button {
         text-transform: uppercase;
         transition: 0.25s;
 
-        &:focus {
+        &:hover {
             font-size: 1.25rem;
             font-weight: bold;
             color: $purple;
         }
     }
+
+    &__background {
+        opacity: 0;
+        top: 0;
+        left: 0;
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        z-index: 4;
+        background-color: #ddd;
+        transition: 0.25s;
+    }
+
+    &__toggler {
+        top: 2rem;
+        right: 10%;
+        position: absolute;
+        display: none;
+    }
+
+    &__toggler-shape {
+
+        &:after,
+        &:before,
+        & {
+            position: relative;
+            width: 2.5rem;
+            height: 0.25rem;
+            background-color: $black;
+            transition: 0.25s;
+        }
+
+        &:after,
+        &:before {
+            top: -0.5rem;
+            left: 0;
+            position: absolute;
+            content: '';
+        }
+
+        &:before {
+            top: 0.5rem;
+            left: 0;
+        }
+
+    }
+
+    .active &__toggler-shape {
+        & {
+            transform: rotate(45deg);
+        }
+
+        &:before,
+        &:after {
+            top: 0;
+            left: 0;
+            transform: rotate(-90deg);
+
+        }
+    }
+    
+
+    &.mobile {
+        min-height: 5rem;
+        padding-right: 3rem;
+        // flex-direction: column;
+    }
+
+    .mobile &__logo {
+        top: 0;
+        left: 5rem;
+        position: absolute;
+    }
+
+    .mobile &__list {
+        padding-left: 0;
+        padding-top: 5rem;
+        padding-bottom: 1rem;
+        display: block;
+    }
+
+    .mobile &__item {}
+
+    .mobile &__link {}
+
+    .mobile &__background {}
+
+    .mobile &__toggler {
+        display: block;
+    }
+}
+
+.anchor {
+    position: absolute;
+    top: -4.5rem;
 }
 
 .footer {
     padding: 10rem 10%;
     position: relative;
 
-    &__title {}
+    .col-md-3 {
+        margin-bottom: 3rem;
+    }
+
+    &__title {
+        font-family: $font-text;
+        font-weight: 700;
+        font-size: 1.25em;
+    }
 
     &__list {}
 
@@ -334,6 +446,10 @@ button {
 
     .wide-block {
         padding: 1em !important;
+    }
+
+    .footer {
+        padding: 5rem 10% !important;
     }
 }
 

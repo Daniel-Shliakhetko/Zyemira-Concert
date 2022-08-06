@@ -240,6 +240,10 @@
   margin: 0 auto;
 }
 
+.party-cool {
+  position: relative;
+}
+
 .party-cool-image-block {
   position: relative;
   z-index: 6;
@@ -421,11 +425,21 @@
   text-align: center;
   padding: 2rem 20%;
 }
+@media (max-width: 767px) and (min-width: 320px) {
+  .news-letter-content__title {
+    padding: 2rem 0;
+  }
+}
 .news-letter-content__title .title-highlight {
   color: #e0e0e0;
 }
 .news-letter-content__form {
   padding: 0 20%;
+}
+@media (max-width: 767px) and (min-width: 320px) {
+  .news-letter-content__form {
+    padding: 1rem;
+  }
 }
 .news-letter-content input,
 .news-letter-content textarea {

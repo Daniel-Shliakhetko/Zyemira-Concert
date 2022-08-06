@@ -344,7 +344,9 @@ $font-text: 'Monda', sans-serif;
 
 }
 
-.party-cool {}
+.party-cool {
+    position: relative;
+}
 
 
 .party-cool-image-block {
@@ -576,6 +578,11 @@ $font-text: 'Monda', sans-serif;
     }
 
     &__title {
+        @media (max-width:767px) and (min-width:320px) {
+            &{
+                padding: 2rem 0;
+            }
+        }
         text-align: center;
         padding: 2rem 20%;
 
@@ -585,6 +592,11 @@ $font-text: 'Monda', sans-serif;
     }
 
     &__form {
+        @media (max-width:767px) and (min-width:320px) {
+            &{
+                padding: 1rem;
+            }
+        }
         padding: 0 20%;
 
     }
