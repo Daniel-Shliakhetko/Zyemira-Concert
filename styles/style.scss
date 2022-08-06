@@ -404,6 +404,7 @@ button {
     position: relative;
 
     .col-md-3 {
+        padding: 0.5rem !important;
         margin-bottom: 3rem;
     }
 
@@ -459,10 +460,18 @@ button {
 @media (max-width:1439px) and (min-width:1024px) {}
 
 //Tablet
-@media (max-width:1023px) and (min-width:768px) {}
+@media (max-width:1023px) and (min-width:768px) {
+    .learn-more{
+        padding: 0.75rem 2rem!important;
+    }
+}
 
 //Phone
 @media (max-width:767px) and (min-width:320px) {
+
+    .learn-more{
+        padding: 0.75rem 2rem!important;
+    }
 
     p {
         padding: 1em !important;

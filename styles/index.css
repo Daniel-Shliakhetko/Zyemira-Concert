@@ -1,4 +1,7 @@
-.home-image img, .party-carousel__image img, .party-heart__image img, .news-letter-image img {
+.home-image img,
+.party-carousel__image img,
+.party-heart__image img,
+.news-letter-image img {
   height: 100%;
 }
 
@@ -33,7 +36,6 @@
 }
 
 .music-show-title {
-  max-width: 50%;
   height: auto;
   margin-bottom: 2rem;
   display: flex;
@@ -112,7 +114,7 @@
   height: fit-content;
 }
 .carousel-dates__slide {
-  height: 30rem;
+  height: 35rem;
 }
 
 .date {
@@ -126,7 +128,7 @@
 }
 .date__title {
   top: 0;
-  right: 7rem;
+  right: 6.5rem;
   position: absolute;
   font-family: "Monda", sans-serif;
   font-size: 2em;
@@ -147,6 +149,7 @@
   background-color: #9913e1;
 }
 .reserve-tickets-top-images__top img, .reserve-tickets-top-images__left img {
+  height: 100%;
   opacity: 0.4;
   filter: contrast(125%) brightness(250%);
 }
@@ -492,11 +495,47 @@
   color: #b30be6 !important;
 }
 
+@media (max-width: 1023px) and (min-width: 768px) {
+  .news-letter-content__title {
+    padding: 2rem 0% !important;
+  }
+  .news-letter-content__form {
+    padding: 0 10% !important;
+  }
+}
 @media (max-width: 767px) and (min-width: 320px) {
+  .news-letter-content__title {
+    padding: 2rem 0% !important;
+  }
+  .news-letter-content__form {
+    padding: 0 10% !important;
+  }
   .heart-banner__spiral {
     display: none;
   }
   .carousel-info {
+    padding-top: 3rem !important;
     padding: 0rem 1rem;
+  }
+  .carousel-dates {
+    padding-top: 5rem !important;
+    position: relative;
+  }
+  .carousel-dates__controls {
+    right: 0;
+    position: absolute;
+    display: flex;
+  }
+  .carousel-dates__controls button:first-child {
+    margin-right: 9rem;
+  }
+  .party-heart-content__content {
+    padding: 1rem 1rem !important;
+  }
+  .stars-background__paper-left {
+    left: -1rem !important;
+  }
+  .stars-background__paper-right {
+    right: -4rem !important;
   }
 }/*# sourceMappingURL=index.css.map */

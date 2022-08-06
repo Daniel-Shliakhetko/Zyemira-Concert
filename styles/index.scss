@@ -15,7 +15,10 @@ $font-text: 'Monda', sans-serif;
 //     &__purple {
 //     }
 // }
-.home-image img, .party-carousel__image img, .party-heart__image img, .news-letter-image img{
+.home-image img,
+.party-carousel__image img,
+.party-heart__image img,
+.news-letter-image img {
     height: 100%;
 }
 
@@ -56,7 +59,7 @@ $font-text: 'Monda', sans-serif;
 }
 
 .music-show-title {
-    max-width: 50%;
+    // max-width: 50%;
     height: auto;
     margin-bottom: 2rem;
     display: flex;
@@ -166,7 +169,7 @@ $font-text: 'Monda', sans-serif;
     }
 
     &__slide {
-        height: 30rem;
+        height: 35rem;
     }
 }
 
@@ -182,7 +185,7 @@ $font-text: 'Monda', sans-serif;
 
     &__title {
         top: 0;
-        right: 7rem;
+        right: 6.5rem;
         position: absolute;
         font-family: $font-text;
         font-size: 2em;
@@ -221,6 +224,7 @@ $font-text: 'Monda', sans-serif;
         background-color: $purple;
 
         img {
+            height: 100%;
             opacity: 0.4;
             filter: contrast(125%) brightness(250%);
         }
@@ -285,7 +289,7 @@ $font-text: 'Monda', sans-serif;
 }
 
 .carousel-info {
-    padding-top:10rem!important;
+    padding-top: 10rem !important;
     padding: 0 15%;
     position: relative;
 
@@ -584,10 +588,11 @@ $font-text: 'Monda', sans-serif;
 
     &__title {
         @media (max-width:767px) and (min-width:320px) {
-            &{
+            & {
                 padding: 2rem 0;
             }
         }
+
         text-align: center;
         padding: 2rem 20%;
 
@@ -598,10 +603,11 @@ $font-text: 'Monda', sans-serif;
 
     &__form {
         @media (max-width:767px) and (min-width:320px) {
-            &{
+            & {
                 padding: 1rem;
             }
         }
+
         padding: 0 20%;
 
     }
@@ -659,15 +665,57 @@ $font-text: 'Monda', sans-serif;
 @media (max-width:1439px) and (min-width:1024px) {}
 
 //Tablet
-@media (max-width:1023px) and (min-width:768px) {}
+@media (max-width:1023px) and (min-width:768px) {
+    .news-letter-content__title {
+        padding: 2rem 0%!important;
+    }
+    .news-letter-content__form {
+        padding: 0 10% !important;
+    }
+}
 
 //Phone
 @media (max-width:767px) and (min-width:320px) {
+    .news-letter-content__title {
+        padding: 2rem 0%!important;
+    }
+    .news-letter-content__form {
+        padding: 0 10% !important;
+    }
+
     .heart-banner__spiral {
         display: none;
     }
 
     .carousel-info {
+        padding-top: 3rem !important;
         padding: 0rem 1rem;
+    }
+
+    .carousel-dates {
+        padding-top: 5rem !important;
+        position: relative;
+
+        &__controls {
+            right: 0;
+            position: absolute;
+            display: flex;
+
+            & button:first-child {
+                margin-right: 9rem;
+            }
+        }
+    }
+
+    .party-heart-content__content {
+        padding: 1rem 1rem !important;
+    }
+
+    .stars-background__paper-left {
+        left: -1rem !important;
+    }
+
+    .stars-background__paper-right {
+        right: -4rem !important;
     }
 }
