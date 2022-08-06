@@ -1,3 +1,7 @@
+.home-image img, .party-carousel__image img, .party-heart__image img, .news-letter-image img {
+  height: 100%;
+}
+
 .home {
   position: relative;
 }
@@ -188,7 +192,8 @@
   position: absolute;
 }
 .carousel-info {
-  padding: 5rem 15%;
+  padding-top: 10rem !important;
+  padding: 0 15%;
   position: relative;
 }
 .carousel-info__slides {
@@ -203,7 +208,7 @@
   padding: 0 15%;
   left: 50%;
   width: 100%;
-  bottom: 3rem;
+  bottom: 5rem;
   position: absolute;
   display: flex;
   justify-content: space-between;

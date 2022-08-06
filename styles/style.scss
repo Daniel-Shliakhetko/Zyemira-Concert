@@ -219,6 +219,46 @@ button {
     overflow-x: hidden;
 }
 
+.loader {
+    top: 0;
+    left: 0;
+    position: fixed;
+    background-color: $purple;
+    width: 100vw;
+    height: 100vh;
+    z-index: 15;
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    transition: 0.5s;
+
+    &__logo {
+        animation: 1.5s infinite loader-logo;
+    }
+}
+
+@keyframes loader-logo {
+    0% {
+        transform: rotate(-7.5deg) translate(3rem);
+    }
+
+    25% {
+        transform: rotate(7.5deg) translate(3rem);
+    }
+
+    50% {
+        transform: rotate(-7.5deg) translate(-3rem);
+    }
+
+    75% {
+        transform: rotate(7.5deg) translate(-3rem);
+    }
+
+    100% {
+        transform: rotate(-7.5deg) translate(3rem);
+    }
+}
+
 .header {
     min-height: 5rem;
     height: 14rem;
@@ -239,9 +279,7 @@ button {
     justify-content: space-between;
     align-items: center;
 
-    &__logo {
-
-    }
+    &__logo {}
 
     &__list {
         // padding-left: 8rem;
@@ -324,7 +362,7 @@ button {
 
         }
     }
-    
+
 
     &.mobile {
         min-height: 5rem;

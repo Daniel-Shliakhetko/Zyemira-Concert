@@ -41,3 +41,10 @@ if ($(window).width() < 768) {
 
 }
 $(".navigation__toggler").click(onTogglerClick);
+
+$(document).ready(()=>{
+  $('.loader').css({opacity:0});
+  setTimeout(()=>{
+  $('.loader').css({display:"none"});
+  }, 500);
+})
